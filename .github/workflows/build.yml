@@ -19,11 +19,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build app (production)
-        run: npm run dist
+      - name: Install electron-builder
+        run: npm install -g electron-builder
 
-      - name: Upload artifact (installer)
+      - name: Build app (production)
+        run: npm run build
+
+      - name: Upload installer
         uses: actions/upload-artifact@v4
         with:
           name: Behzad-HSE-Installer
-          path: dist/*.exe
+          path: dist/*
