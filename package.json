@@ -1,9 +1,8 @@
-{
-  "name": "behzad-hse",
+"name": "behzad-hse",
   "version": "1.0.0",
   "description": "Behzad HSE Desktop Application",
   "author": "Behzad",
-  "main": "src/main.js"},
+  "main": "src/main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
